@@ -14,13 +14,16 @@ You will need a sufficiently recent MATLAB version (MATLAB 9.1 (R2016b) or newer
 4. Select ‘Add’ and then ‘Add to Matlab’
 5. Check it is installed by typing
 >  alexnet
+
 Using DiRekTS
 In order to use, follows these steps:
 1. Download and unpack the library source code into a directory of your choice.
 2. Start MATLAB and search for the directory containing the folder. The, type:
 > cd DiRekTS
+
 3. Open the code by typing
 > open 'DIREKTS.m'
+
 4. Now, click on the ‘EDITOR’ section, followed by ‘Run’
 You are now able to use the app.
 As an example, click ‘load image’ on the app, and select ‘test.tiff’, after a few seconds you will be able to see its diagnosis.
