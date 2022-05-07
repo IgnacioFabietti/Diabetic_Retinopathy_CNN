@@ -1,8 +1,29 @@
-# Accurate Early Diabetic Retinopathy detection by Pre-Trained Deep Learning CNNs linked to a rule-based feature classification layer
+# DiRekTS (Diabetic Retinopathy Evaluation with kTSP and SVM) for MATLAB
 ## Final work of biomedical engineering degree
 
-The worldwide incidence of diabetic retinopathy is growing. However, the blindness outcome could be prevented in almost 90% of cases by early detection, where
-automatic method may play a crucial role. Deep learning strategies emerge as a candidate solution for this problem, but building such approaches from scratch requires
-a high number of training data usually scarce in most eye clinics. To overcome this limitation, a hybrid strategy is proposed by concatenating a pre-trained Convolutional Neural Network (CNN) as a feature extractor layer, with another classification method. Three pre-trained CNNs and two classification methods were evaluated. They were trained and tested with 1642 and 862 retinal images respectively. It was found that features from the AlexNet CNN concatenated with a support vector machine or k-Top Scoring Pairs method achieves the best results reaching F-Score values of 86% and 83%. Furthermore, the kTSP used less than 1% of the CNN features since it simultaneously performs feature selection and classification providing an easily interpretable rule based output.
-Keywords: Convolutional Neural Network, Machine Learning, k-Top Scoring Pairs, Support Vector Machine.
+DiRekTS is a MATLAB GUI tool that classifies fundus images in whether it presents diabetic retinopathy or is healthy.  
+The algorithm was developed implementing the pret-CNN and k-Top Scoring Pairs and Support Vector Machine, for AlexNet extracted-features. 
+The Software allows loading a fundus image, which is displayed on the main panel which is the processed by the AlexNet and by both classification layers 
+providing the positive class posterior probabilities given the SVM and the graphical representation of kTSP appears on screen, with the positive/negative rule ratio. 
+An example fundus image is included in the files.
+Requirements
+You will need a sufficiently recent MATLAB version (MATLAB 9.1 (R2016b) or newer). Depending on the specific MATLAB version, further constraints may apply.
+1. Start MATLAB
+2. Select the ‘APPS’ section, and click on ‘Get More Apps’
+3. On the Search bar, type: ‘Neural Network Toolbox Model for AlexNet Network’
+4. Select ‘Add’ and then ‘Add to Matlab’
+5. Check it is installed by typing
+>  alexnet
+Using DiRekTS
+In order to use, follows these steps:
+1. Download and unpack the library source code into a directory of your choice.
+2. Start MATLAB and search for the directory containing the folder. The, type:
+> cd DiRekTS
+3. Open the code by typing
+> open 'DIREKTS.m'
+4. Now, click on the ‘EDITOR’ section, followed by ‘Run’
+You are now able to use the app.
+As an example, click ‘load image’ on the app, and select ‘test.tiff’, after a few seconds you will be able to see its diagnosis.
+
 Availability: A diabetic retinopathy diagnostic tool is available at https://doi.org/10.5281/zenodo.1296971
+
